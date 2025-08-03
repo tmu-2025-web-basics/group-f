@@ -642,9 +642,9 @@ position: absolute; /* fixedからabsoluteに変更 */
         flex: 1;
     }
 
-    .nav-group img[alt="kapuyellow1"],
-    .nav-group img[alt="kapuyellow2"],
-    .nav-group img[alt="kapuyellow3"],
+    .nav-group img[alt="kapublue1"],
+    .nav-group img[alt="kapublue2"],
+    .nav-group img[alt="kapublue3"],
     .nav-group img[alt="haikapu1"],
     .nav-group img[alt="haikapu2"] {
         width: 70px !important;
@@ -654,22 +654,22 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 }
 
-.nav-group img[alt="kapuyellow1"],
-.nav-group img[alt="kapuyellow2"],
-.nav-group img[alt="kapuyellow3"],
+.nav-group img[alt="kapublue1"],
+.nav-group img[alt="kapublue2"],
+.nav-group img[alt="kapublue3"],
 .nav-group img[alt="haikapu1"],
 .nav-group img[alt="haikapu2"] {
     margin-top: -40px; 
     transition: transform 0.2s;
 }
 
-.nav-group img[alt="kapuyellow1"]:hover {
+.nav-group img[alt="kapublue1"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
-.nav-group img[alt="kapuyellow2"]:hover {
+.nav-group img[alt="kapublue"]:hover {
     transform: scale(1.12) rotate(17deg);
 }
-.nav-group img[alt="kapuyellow3"]:hover {
+.nav-group img[alt="kapublue3"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
 .nav-group img[alt="haikapu1"]:hover {
