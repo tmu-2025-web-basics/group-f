@@ -153,7 +153,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 .kazari1-img {
     display: inline-block;
     position: absolute;
-    top: 190px;      /* お好みで調整 */
+    top: 180px;      /* お好みで調整 */
     right: -180px;    /* お好みで調整 */
     width: 300px;     /* お好みで調整 */
     height: auto;
@@ -242,7 +242,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .pinkcomment-svg {
     position: absolute;
-    left: 150px; /* kaihuuの右隣に配置 */
+    left: 180px; /* kaihuuの右隣に配置 */
     top: 765px; /* kaihuuと同じ高さ */
     width: 600px; /* サイズを調整 */
     height: auto;
@@ -271,7 +271,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .midoricomment-svg {
     position: absolute;
-    left: 150px; /* pinkcommentと同じ左位置 */
+    left: 180px; /* pinkcommentと同じ左位置 */
     top: 1015px; /* pinkcommentの下に配置 */
     width: 600px; /* pinkcommentと同じサイズ */
     height: auto;
