@@ -551,7 +551,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         width: 100px;
     }
 
-    .kaihuu2-image {
+    .kaihuu4-image {
         top: 580px !important;
         left: 20px;
         width: 100px;
@@ -625,16 +625,20 @@ position: absolute; /* fixedからabsoluteに変更 */
         width: 40px;
     }
 
-.navigation {
+    .navigation {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
-        justify-content: center;
-        gap: 8px;
+        justify-content: space-evenly;
+        gap: 0;
+        width: 100%;
+        padding: 0 60px;
     }
     .nav-group {
-        justify-content: center;
-        gap: 8px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
+        flex: 1;
     }
 
     .nav-group img[alt="kapuyellow1"],
@@ -642,27 +646,29 @@ position: absolute; /* fixedからabsoluteに変更 */
     .nav-group img[alt="kapuyellow3"],
     .nav-group img[alt="haikapu1"],
     .nav-group img[alt="haikapu2"] {
-        width: 60px;
-        height: auto;
+        width: 70px !important;
+        height: 70px !important;
+        object-fit: contain;
     }
+
 }
 
-.nav-group img[alt="kapu1"],
-.nav-group img[alt="kapu2"],
-.nav-group img[alt="kapu3"],
+.nav-group img[alt="kapuyellow1"],
+.nav-group img[alt="kapuyellow2"],
+.nav-group img[alt="kapuyellow3"],
 .nav-group img[alt="haikapu1"],
 .nav-group img[alt="haikapu2"] {
-    margin-top: 0px; 
+    margin-top: -40px; 
     transition: transform 0.2s;
 }
 
-.nav-group img[alt="kapu1"]:hover {
+.nav-group img[alt="kapuyellow1"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
-.nav-group img[alt="kapu2"]:hover {
+.nav-group img[alt="kapuyellow2"]:hover {
     transform: scale(1.12) rotate(17deg);
 }
-.nav-group img[alt="kapu3"]:hover {
+.nav-group img[alt="kapuyellow3"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
 .nav-group img[alt="haikapu1"]:hover {
