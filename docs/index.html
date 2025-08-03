@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+ <head>
     <meta charset="UTF-8">
+    <title>かぷせるわーるど</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="toppage-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+ </head>
+
+ <body class = "home">
+    <audio id = "bgm" src = "Splash_of_water.mp3" loop></audio>
+    <div id="sound-modal" class="sound-select-modal">
+      <div class="sound-select-box">
+        <p>サウンド</p>
+        <button id="sound-on">ON</button>
+        <button id="sound-off">OFF</button>
+      </div>
+    </div>
+   <div id="loading-modal" class="loading-modal">Loading...</div>
+   <a href = "select-machine/select-machine.html" class = "btn float">Go  to  World</a>  
+
+   <div id="world-loading" class="world-loading-modal">Let's go to select the world!</div>
+
+   <script>
+      const modal = document.getElementById('sound-modal');
+      const bgm = document.getElementById('bgm');
+      const loading = document.getElementById('loading-modal');
+      function showMainScreen(playSound) {
+        modal.style.display = 'none';
+        loading.classList.add('active');
+        setTimeout(() => {
+          loading.classList.remove('active');
+          if (playSound) bgm.play();
+        if (playSound) bgm.play();
+      setTimeout(() => {// さらに3秒後にボタンやタイトルを表示
+        document.querySelectorAll('.float').forEach(el =>{
+          el.classList.add('show');
+        });
+      }, 3000); // 3秒後にボタンを表示
+    }, 2000); // 2秒間ローディング画面を表示
+
+    document.querySelector('.btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const worldLoading = document.getElementById('world-loading');
+    worldLoading.classList.add('active');
+    setTimeout(() => {
+     // ページ遷移
+      window.location.href = this.href;
+    }, 4000); // 2秒間ローディング表示
+    });
+  }
+      document.getElementById('sound-on').onclick = () => showMainScreen(true);
+      document.getElementById('sound-off').onclick = () => showMainScreen(false);
+
+    </script>
     
-</body>
+ </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ガチャ選択</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="select-machine.css">
+</head>
+<body>
+  <button id="moveLeft" class="move-btn left"></button>
+  <button id="moveRight" class="move-btn right"></button>
+  <div class="scroll-container" id="imageList"> 
+    <div class="image-item"><img src="../images/RedMachine1.png" alt="有名"></div>
+    <div class="image-item"><img src="../images/BlueMachine1.png" alt="実際に使える"></div>
+    <div class="image-item"><img src="../images/GreenMachine1.png" alt="ミニチュア"></div>
+    <div class="image-item"><img src="../images/YellowMachine1.png" alt="謎"></div>
+    <div class="image-item"><img src="../images/PinkMachine1.png" alt="今日のおすすめ"></div>
+  </div>
+  <button id="gachaBtn" class="gacha-btn">このガチャを回す</button>
+  
+  <audio id="gacha-sound" src="gatya-sound.mp3"></audio>
+  <audio id="pon-sound" src="pon.mp3"></audio>
+  
+  <div id="popup" class="popup" style="display:none;">
+    <div class="popup-content">
+      <button id="closePopupBtn" class="popup-close">×</button>
+      <div class="popup-result-title">
+        <h2 id="resultTitle">商品名</h2>
+      </div>
+      <div class="popup-result-image">
+        <img id="resultImage" src="" alt="ガチャ結果">
+      </div>
+      <div class="popup-buttons">
+        <button id="retryBtn">もう一度回す</button>
+        <button id="detailBtn">詳しく見る</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="gachaAnimation" style="display:none; position:fixed; left:0; top:0; width:100vw; height:100vh; z-index:200; ;">
+    <div class="gacha-machine" style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">
+      <div class="machine-top"></div>
+      <div class="machine-window"></div>
+      <div class="machine-bottom">
+        <div class="machine-exit"></div>
+        <div class="machine-lever">
+          <div class="lever-bar">
+            <div class="lever-eq"></div>
+            <div class="lever-eq"></div>
+          </div>
+          <div class="lever-dial"></div>
+        </div>
+        <div class="coin-slot"></div>
+      </div>
+    </div>
+    
+    <!-- カプセルをgachaAnimationの直下に移動 -->
+    <div id="capsule" class="capsule" style="display:none; position:fixed; z-index:15;">
+      <div class="capsule-top"></div>
+      <div class="capsule-bottom"></div>
+    </div>
+  </div>
+
+  <script src="select-machine.js"></script>
+</body>
+</html>

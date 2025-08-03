@@ -1,0 +1,762 @@
+.child {
+  	position: absolute;
+  	top: -348px;
+  	left: 669px;
+  	width: 2137px;
+  	height: 3586.5px;
+}
+.item {
+  	position: absolute;
+  	top: -153px;
+  	left: -1068px;
+  	width: 336px;
+  	height: 336px;
+}
+.child1 {
+  	position: absolute;
+  	top: 466px;
+  	left: calc(50% - 580px);
+  	background-image: url('../images/camera000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child1:hover {
+  	transform: scale(1.05);
+  	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  	filter: brightness(1.1);
+}
+.inner {
+  	position: absolute;
+  	top: 466px;
+  	left: calc(50% - 168px);
+  	background-image: url('../images/jikokuhyou000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.inner:hover {
+  	transform: scale(1.05);
+  	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  	filter: brightness(1.1);
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 466px;
+  	left: calc(50% + 244px);
+  	background-image: url('../images/kasa000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.rectangle-div:hover {
+  	transform: scale(1.05);
+  	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  	filter: brightness(1.1);
+}
+.child3 {
+  	position: absolute;
+  	top: 1650px;
+  	left: calc(50% - 580px);
+  	background-image: url('../images/oden000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child2 {
+  	position: absolute;
+  	top: 1650px;
+  	left: calc(50% - 168px);
+  	background-image: url('../images/onigiri000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child4 {
+  	position: absolute;
+  	top: 1650px;
+  	left: calc(50% + 244px);
+  	background-image: url('../images/panda000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child6 {
+  	position: absolute;
+  	top: 1050px;
+  	left: calc(50% - 580px);
+  	background-image: url('../images/cleaner1000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child5 {
+  	position: absolute;
+  	top: 1050px;
+  	left: calc(50% - 168px);
+  	background-image: url('../images/fan000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child9 {
+  	position: absolute;
+  	top: 1050px;
+  	left: calc(50% + 244px);
+  	background-image: url('../images/maker000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child7 {
+  	position: absolute;
+  	top: 2250px;
+  	left: calc(50% - 370px);
+  	background-image: url('../images/kinchaku000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+.child8 {
+  	position: absolute;
+  	top: 2250px;
+  	left: calc(50% + 70px);
+  	background-image: url('../images/airplane000.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	width: 336px;
+  	height: 336px;
+  	border: 3px solid #615858;
+  	box-sizing: border-box;
+  	z-index: 10;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+
+/* 全ての四角形のホバー効果 */
+.child1:hover, .inner:hover, .rectangle-div:hover, 
+.child2:hover, .child3:hover, .child4:hover, 
+.child5:hover, .child6:hover, .child7:hover, 
+.child8:hover, .child9:hover {
+  	transform: scale(1.05);
+  	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  	filter: brightness(1.1);
+  	border-width: 3px;
+}
+.mystery-world {
+  	position: absolute;
+  	top: 2123px;
+  	left: 55%;
+  	transform: translateX(-50%);
+  	display: inline-block;
+  	width: 616px;
+  	height: 100px;
+  	z-index: 10;
+}
+.classic-world {
+  	position: absolute;
+  	top: 1523px;
+  	left: 55%;
+  	transform: translateX(-50%);
+  	display: inline-block;
+  	width: 616px;
+  	height: 100px;
+  	z-index: 10;
+}
+.mechanic-world {
+  	position: absolute;
+  	top: 923px;
+  	left: 55%;
+  	transform: translateX(-50%);
+  	display: inline-block;
+  	width: 664px;
+  	height: 100px;
+  	z-index: 10;
+}
+.miniature-world {
+  	position: absolute;
+  	top: 337px;
+  	left: 55%;
+  	transform: translateX(-50%);
+  	display: inline-block;
+  	width: 732px;
+  	height: 100px;
+  	z-index: 10;
+}
+
+/* ワールドタイトルとサブタイトルのスタイル */
+.world-title {
+  	font-size: 64px;
+  	font-family: 'Yusei Magic';
+  	color: #615858;
+  	line-height: 1.2;
+  	margin-bottom: 2px;
+}
+.world-subtitle {
+  	font-size: 24px;
+  	font-family: 'Yusei Magic';
+  	color: #888;
+  	line-height: 1.2;
+}
+.div1 {
+  	position: absolute;
+  	top: 112px;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	font-size: 96px;
+  	font-family: 'Yusei Magic';
+  	display: inline-block;
+  	width: 395px;
+  	height: 102px;
+  	z-index: 10;
+}
+.div {
+  	width: 100%;
+  	position: relative;
+  	background-color: #fde5ff;
+  	height: 2900px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 64px;
+  	color: #615858;
+  	font-family: 'Yusei Magic';
+}
+
+/* 固定haikapu2スタイル */
+.haikapu-fixed {
+  	position: fixed;
+  	bottom: 20px;
+  	right: 20px;
+  	z-index: 1000;
+  	width: 120px;
+  	height: 120px;
+}
+
+.haikapu-fixed img {
+  	width: 100%;
+  	height: 100%;
+  	object-fit: contain;
+  	cursor: pointer;
+}
+
+.haikapu-fixed:hover img {
+  	content: url('svg/haikapu2edit.svg');
+  	transform: scale(1.5) translateY(-8px);
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1200px) {
+  	/* 四角形のサイズを80%に縮小 */
+  	.child1, .inner, .rectangle-div, .child2, .child3, .child4 {
+  		width: 268px;
+  		height: 268px;
+  	}
+  	.child5, .child6, .child7, .child8 {
+  		width: 268px;
+  		height: 268px;
+  	}
+  	.child9 {
+  		width: 268px;
+  		height: 268px;
+  	}
+  	
+	/* ワールド間の隙間を80%に縮小 */
+	.child1, .inner, .rectangle-div {
+		top: 370px;
+	}
+	.child6, .child5 {
+		top: 840px;
+	}
+	.child9 {
+		top: 840px;
+	}
+	.child3, .child2, .child4 {
+		top: 1320px;
+	}
+	.child7, .child8 {
+		top: 1800px;
+	}  	/* 四角形の間隔を調整してくっつかないようにする */
+  	.child1, .child3 {
+  		left: 50px;
+  	}
+  	.inner, .child2 {
+  		left: 350px;
+  	}
+  	.rectangle-div, .child4 {
+  		left: 650px;
+  	}
+  	/* 2個並びの四角形を3個並びの左2個と縦ラインを合わせる */
+  	.child6, .child7 {
+  		left: 50px;
+  	}
+  	.child5, .child8 {
+  		left: 350px;
+  	}
+  	.child9 {
+  		left: 650px;
+  	}
+  	
+  	/* テキスト位置も調整 */
+  	.miniature-world {
+  		top: 270px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.miniature-world .world-title {
+  		font-size: 48px;
+  	}
+  	.miniature-world .world-subtitle {
+  		font-size: 24px;
+  	}
+  	.mechanic-world {
+  		top: 740px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mechanic-world .world-title {
+  		font-size: 48px;
+  	}
+  	.mechanic-world .world-subtitle {
+  		font-size: 24px;
+  	}
+  	.classic-world {
+  		top: 1220px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.classic-world .world-title {
+  		font-size: 48px;
+  	}
+  	.classic-world .world-subtitle {
+  		font-size: 24px;
+  	}
+  	.mystery-world {
+  		top: 1700px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mystery-world .world-title {
+  		font-size: 48px;
+  	}
+  	.mystery-world .world-subtitle {
+  		font-size: 24px;
+  	}
+  	.div1 {
+  		left: 20px;
+  		transform: none;
+  		font-size: 60px;
+  	}
+  	
+  	/* 文字サイズを80%に縮小 */
+  	.div {
+  		font-size: 48px;
+  		height: 2320px;
+  	}
+  	
+  	/* 固定haikapu2の1200px対応 */
+  	.haikapu-fixed {
+  		width: 100px;
+  		height: 100px;
+  	}
+}
+
+@media screen and (max-width: 900px) {
+  	/* 四角形のサイズを65%に縮小 */
+  	.child1, .inner, .rectangle-div, .child2, .child3, .child4 {
+  		width: 218px;
+  		height: 218px;
+  	}
+  	.child5, .child6, .child7, .child8 {
+  		width: 218px;
+  		height: 218px;
+  	}
+  	.child9 {
+  		width: 218px;
+  		height: 218px;
+  	}
+  	
+	/* ワールド間の隙間を65%に縮小 */
+	.child1, .inner, .rectangle-div {
+		top: 300px;
+	}
+	.child6, .child5 {
+		top: 680px;
+	}
+	.child9 {
+		top: 680px;
+	}
+	.child3, .child2, .child4 {
+		top: 1070px;
+	}
+	.child7, .child8 {
+		top: 1460px;
+	}  	/* 四角形を左揃えで配置 */
+  	.child1, .child3 {
+  		left: 30px;
+  	}
+  	.inner, .child2 {
+  		left: 280px;
+  	}
+  	.rectangle-div, .child4 {
+  		left: 530px;
+  	}
+  	/* 2個並びの四角形を3個並びの左2個と縦ラインを合わせる */
+  	.child6, .child7 {
+  		left: 30px;
+  	}
+  	.child5, .child8 {
+  		left: 280px;
+  	}
+  	.child9 {
+  		left: 530px;
+  	}
+  	
+  	/* テキスト位置も調整 */
+  	.miniature-world {
+  		top: 225px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.miniature-world .world-title {
+  		font-size: 36px;
+  	}
+  	.miniature-world .world-subtitle {
+  		font-size: 18px;
+  	}
+  	.mechanic-world {
+  		top: 605px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mechanic-world .world-title {
+  		font-size: 36px;
+  	}
+  	.mechanic-world .world-subtitle {
+  		font-size: 18px;
+  	}
+  	.classic-world {
+  		top: 995px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.classic-world .world-title {
+  		font-size: 36px;
+  	}
+  	.classic-world .world-subtitle {
+  		font-size: 18px;
+  	}
+  	.mystery-world {
+  		top: 1385px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mystery-world .world-title {
+  		font-size: 36px;
+  	}
+  	.mystery-world .world-subtitle {
+  		font-size: 18px;
+  	}
+  	.div1 {
+  		left: 20px;
+  		transform: none;
+  		font-size: 48px;
+  	}
+  	
+  	/* ベース文字サイズを65%に縮小 */
+  	.div {
+  		font-size: 36px;
+  		height: 1885px;
+  	}
+  	
+  	/* 固定haikapu2の900px対応 */
+  	.haikapu-fixed {
+  		width: 85px;
+  		height: 85px;
+  	}
+}
+
+@media screen and (max-width: 750px) {
+  	/* 四角形のサイズを50%に縮小 */
+  	.child1, .inner, .rectangle-div, .child2, .child3, .child4 {
+  		width: 168px;
+  		height: 168px;
+  	}
+  	.child5, .child6, .child7, .child8 {
+  		width: 168px;
+  		height: 168px;
+  	}
+  	.child9 {
+  		width: 168px;
+  		height: 168px;
+  	}
+  	
+	/* ワールド間の隙間を50%に縮小（モバイル対応） */
+	.child1, .inner, .rectangle-div {
+		top: 240px;
+	}
+	.child6, .child5 {
+		top: 520px;
+	}
+	.child9 {
+		top: 520px;
+	}
+	.child3, .child2, .child4 {
+		top: 800px;
+	}
+	.child7, .child8 {
+		top: 1080px;
+	}  	/* 四角形を左揃えで縦に配置（モバイル対応） */
+  	.child1, .child3 {
+  		left: 20px;
+  	}
+  	.inner, .child2 {
+  		left: 210px;
+  	}
+  	.rectangle-div, .child4 {
+  		left: 400px;
+  	}
+  	/* 2個並びの四角形を3個並びの左2個と縦ラインを合わせる */
+  	.child6, .child7 {
+  		left: 20px;
+  	}
+  	.child5, .child8 {
+  		left: 210px;
+  	}
+  	.child9 {
+  		left: 400px;
+  	}
+  	
+  	/* テキスト位置も調整（モバイル用） */
+  	.miniature-world {
+  		top: 180px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.miniature-world .world-title {
+  		font-size: 28px;
+  	}
+  	.miniature-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.mechanic-world {
+  		top: 460px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mechanic-world .world-title {
+  		font-size: 28px;
+  	}
+  	.mechanic-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.classic-world {
+  		top: 740px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.classic-world .world-title {
+  		font-size: 28px;
+  	}
+  	.classic-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.mystery-world {
+  		top: 1020px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mystery-world .world-title {
+  		font-size: 28px;
+  	}
+  	.mystery-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.div1 {
+  		left: 20px;
+  		transform: none;
+  		font-size: 36px;
+  	}
+  	
+  	/* ベース文字サイズを50%に縮小 */
+  	.div {
+  		font-size: 28px;
+  		height: 1450px;
+  	}
+  	
+  	/* 固定haikapu2の750px対応 */
+  	.haikapu-fixed {
+  		width: 70px;
+  		height: 70px;
+  	}
+}
+
+@media screen and (max-width: 550px) {
+  	/* 四角形のサイズを40%に縮小 */
+  	.child1, .inner, .rectangle-div, .child2, .child3, .child4 {
+  		width: 134px;
+  		height: 134px;
+  	}
+  	.child5, .child6, .child7, .child8 {
+  		width: 134px;
+  		height: 134px;
+  	}
+  	.child9 {
+  		width: 134px;
+  		height: 134px;
+  	}
+  	
+  	/* 2列表示用の配置（550px以下のみ） */
+  	.child1, .inner {
+  		top: 320px;
+  	}
+  	.rectangle-div {
+  		top: 500px;
+  	}
+  	.child6, .child5 {
+  		top: 720px;
+  	}
+  	.child9 {
+  		top: 900px;
+  	}
+  	.child3, .child2 {
+  		top: 1120px;
+  	}
+  	.child4 {
+  		top: 1300px;
+  	}
+  	.child7, .child8 {
+  		top: 1520px;
+  	}
+  	
+	/* 2列配置 */
+	.child1, .child3, .child6, .child7, .rectangle-div, .child4, .child9 {
+		left: 20px;
+	}
+	.inner, .child2, .child5, .child8 {
+		left: 200px;
+	}  	/* テキスト位置調整（550px以下） */
+  	.miniature-world {
+  		top: 270px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.miniature-world .world-title {
+  		font-size: 24px;
+  	}
+  	.miniature-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.mechanic-world {
+  		top: 670px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mechanic-world .world-title {
+  		font-size: 24px;
+  	}
+  	.mechanic-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.classic-world {
+  		top: 1070px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.classic-world .world-title {
+  		font-size: 24px;
+  	}
+  	.classic-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.mystery-world {
+  		top: 1470px;
+  		left: 20px;
+  		transform: none;
+  	}
+  	.mystery-world .world-title {
+  		font-size: 24px;
+  	}
+  	.mystery-world .world-subtitle {
+  		font-size: 12px;
+  	}
+  	.div1 {
+  		left: 20px;
+  		transform: none;
+  		font-size: 28px;
+  	}
+  	
+  	/* 全体の高さを調整 */
+  	.div {
+  		font-size: 24px;
+  		height: 1800px;
+  	}
+  	
+  	/* 固定haikapu2のモバイル対応 */
+  	.haikapu-fixed {
+  		width: 55px;
+  		height: 55px;
+  		bottom: 15px;
+  		right: 15px;
+  	}
+}
+

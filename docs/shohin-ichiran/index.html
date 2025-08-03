@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	<title>商品一覧</title>
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei Magic:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="div">
+    		
+
+			<a href="../jr/jr.html">
+    			<div class="inner">
+    				<img src="photo/jikokuhyo000.jpg" alt="jikokuhyo" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+
+			<a href="../kasa/kasa.html">
+    			<div class="rectangle-div">
+    				<img src="photo/kasa000.jpg" alt="kasa" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+
+			<a href="../camera/camera.html">
+    			<div class="child1">
+    				<img src="photo/camera000.jpg" alt="camera" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+
+			<a href="../onigiri/onigiri.html">
+    			<div class="child2">
+    				<img src="photo/onigiri000.jpg" alt="onigiri" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+			
+			<a href="../oden/oden.html">
+    			<div class="child3">
+    				<img src="photo/oden000.jpg" alt="oden" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+			
+			<a href="../panda/panda.html">
+    			<div class="child4">
+    				<img src="photo/panda000.jpg" alt="panda" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+			
+			<a href="../fan/fan.html">
+    			<div class="child5">
+    				<img src="photo/fan000.jpg" alt="fan" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+			
+			<a href="../soudiki/soudiki.html">
+    			<div class="child6">
+    				<img src="photo/cleaner1000.jpg" alt="cleaner" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+			
+			<a href="../kinntyaku/kinntyaku.html">
+    			<div class="child7">
+    				<img src="photo/kinchaku000.jpg" alt="kinchaku" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+			
+			<a href="../hikouki/hikouki.html">
+    			<div class="child8">
+    				<img src="photo/airplane000.jpg" alt="airplane" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+			</a>
+    		
+			<a href="../badge/badge.html">
+    			<div class="child9">
+    				<img src="photo/maker000.jpg" alt="maker" style="width: 100%; height: 100%; object-fit: cover;">
+    			</div>
+    		</a>
+    		<div class="mystery-world">
+    			<div class="world-title">ミステリックワールド</div>
+    			<div class="world-subtitle">ー何が出るかわからないガチャー</div>
+    		</div>
+    		<div class="classic-world">
+    			<div class="world-title">クラシックワールド</div>
+    			<div class="world-subtitle">ー有名なシリーズのガチャー</div>
+    		</div>
+    		<div class="mechanic-world">
+    			<div class="world-title">メカニックワールド</div>
+    			<div class="world-subtitle">ー実際に動かせるガチャー</div>
+    		</div>
+    		<div class="miniature-world">
+    			<div class="world-title">ミニチュアワールド</div>
+    			<div class="world-subtitle">ー小さいもののガチャー</div>
+    		</div>
+  	<div class="div1">商品一覧</div>
+  	</div>
+  	
+  	<!-- 固定haikapu2要素 -->
+  	<div class="haikapu-fixed">
+  		<a href="../select-machine/select-machine.html">
+  			<img src="./svg/haikapu2.svg" alt="haikapu2">
+  		</a>
+  	</div>
+  	
+  	<script>
+  		// SVGを背景にランダムに散らばらせる関数
+		function createBackgroundPattern() {
+			const container = document.querySelector('.div');
+			const svgSize = 141; // サイズを1.1倍に変更（128 × 1.1）
+			const numElements = 65; // 要素数を65個に戻す
+			const placedElements = []; // 配置済み要素の位置を記録
+			const svgFiles = ['./svg/red.svg', './svg/yellow.svg', './svg/green.svg', './svg/blue.svg']; // SVGフォルダ内のファイルを指定
+			
+			for (let i = 0; i < numElements; i++) {
+				let x, y;
+				let attempts = 0;
+				const maxAttempts = 150; // 試行回数を増やしてより多くの配置を可能に
+				
+				// 重ならない位置を探す（画面外にもはみ出すように配置）
+				do {
+					// 左右は画面幅の-20%から+20%の範囲で配置（はみ出しあり）
+					x = Math.random() * (window.innerWidth * 1.4) - (window.innerWidth * 0.2);
+					// 上下もコンテナ高さの-10%から+10%の範囲で配置
+					y = Math.random() * (3130 * 1.2) - (3130 * 0.1);
+					attempts++;
+				} while (isOverlapping(x, y, svgSize, placedElements) && attempts < maxAttempts);
+				
+				// 重ならない位置が見つかった場合のみ配置
+  				if (attempts < maxAttempts) {
+  					const svgElement = document.createElement('img');
+  					// ランダムにSVGファイルを選択
+  					const randomSvg = svgFiles[Math.floor(Math.random() * svgFiles.length)];
+  					svgElement.src = randomSvg;
+  					svgElement.className = 'background-svg';
+  					
+  					svgElement.style.cssText = `
+  						position: absolute;
+  						left: ${x}px;
+  						top: ${y}px;
+  						width: ${svgSize}px;
+  						height: ${svgSize}px;
+  						opacity: 1;
+  						z-index: 0;
+  						pointer-events: none;
+  					`;
+  					
+  					container.appendChild(svgElement);
+  					placedElements.push({x: x, y: y, size: svgSize});
+  				}
+  			}
+  		}
+  		
+		// 重なりをチェックする関数
+		function isOverlapping(x, y, size, placedElements) {
+			for (let element of placedElements) {
+				const distance = Math.sqrt(
+					Math.pow(x - element.x, 2) + Math.pow(y - element.y, 2)
+				);
+				if (distance < (size + element.size) * 0.6) { // 重なり判定を適度に調整
+					return true;
+				}
+			}
+			return false;
+		}
+		
+		// ページ読み込み時に実行
+		window.addEventListener('load', createBackgroundPattern);
+	</script>
+	
+</body>
+</html>

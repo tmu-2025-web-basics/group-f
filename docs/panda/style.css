@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  'Yusei Magic','Hiragino Sans', 'Yu Gothic', sans-serif;
+    background: #ffebf0 ;
+    min-height: 100vh;
+    width: 100vw; /* 追加：画面幅いっぱいに */
+    padding: 0; /* padding: 20px を 0 に変更 */
+    margin: 0; /* margin も 0 に */
+    position: relative; /* 追加：絶対位置の基準点にする */
+}
+
+body {
+    background-image: url('../images/star.svg');
+    background-repeat: repeat;
+    background-size: 80px 120px; /* ← 星1つ分の幅と高さを指定（例：120px） */
+}
+
+html {
+    width: 100%; /* 追加 */
+    height: 100%; /* 追加 */
+    background: #ffebf0; 
+    background-image: url('../images/star.svg');
+    background-repeat: repeat;
+    background-size: 80px 120px; /* ← 星1つ分の幅と高さを指定（例：120px） */
+}
+
+
+
+
+
+.pink-svg {
+    position: absolute;
+    left: -48px; /* daikon.jpgと同じ左位置 */
+    top: 100px; /* daikon.jpgより下に配置 */
+    width: 600px; /* サイズを調整 */
+    height: 600px;
+    z-index: 1; /* daikon.jpgより下に表示 */
+    transform: rotate(-1.5deg); /* 20度傾ける */
+}
+
+.below-badge-image {
+    width: 500px;
+    height: 500px;
+    display: block;
+position: absolute; /* fixedからabsoluteに変更 */
+    left: 0px; /* bodyのpadding 20pxを相殺して真の左端に */
+    top: 150px;
+     transform: rotate(-10deg); /* 15度傾ける */
+      z-index: 2; /* pink.svgより上に表示 */
+}
+
+.container {
+    max-width: 90%;
+    min-width: 1200px; /* ← ここを追加。お好みで大きめに */
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 20px;
+    padding: 5vw;
+    box-shadow: none;
+    min-height: 205vh; /* 追加：画面の1.5倍の高さを確保 */
+    padding-bottom: 120px; /* ← ここを追加・調整 */
+}
+
+/* メイン商品セクション */
+.main-product {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: 25px;
+     
+}
+
+.product-badge-svg {
+    flex-shrink: 0;
+    z-index: 2;
+    
+}
+
+.product-badge {
+    background: #ff8fa3;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(255, 143, 163, 0.4);
+}
+
+.product-title {
+    font-size: 140px;
+    color: #615858;
+    margin: 0;
+    margin-left: -150px;
+    margin-top: -30px;
+    font-weight: bold;
+    white-space: nowrap; /* 改行を防ぐ */
+    line-height: 0.9;
+}
+
+.product-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.product-image {
+    flex-shrink: 0;
+}
+
+.product-image img {
+    width: 200px;
+    height: 150px;
+    
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-description p {
+    font-size: 40px;   /* お好みの大きさに調整（例: 20px） */
+    line-height: 1.7;
+    color: #615858;    /* 必要なら色も指定 */
+    margin: 0 0 10px 0;
+    padding-left: 20px; /* ← ここを追加。値を増やすとさらに左に寄ります（マイナス値も可） */
+    text-align: left;   /* 念のため左寄せ */
+}
+
+.product-description {
+    background: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 100px; /* 下に移動 */
+    margin-left: 500px;
+    position: relative;
+    width: 600px; /* 幅を指定 */
+    height: 400px; /* 高さを指定 */
+}
+
+.kazari1-img {
+    display: inline-block;
+    position: absolute;
+    top: 190px;      /* お好みで調整 */
+    right: -180px;    /* お好みで調整 */
+    width: 300px;     /* お好みで調整 */
+    height: auto;
+    z-index: 2;
+    vertical-align: middle;
+}
+
+
+
+.price-svg {
+    position: absolute;
+    left: 400px; /* product-descriptionの右側に配置 */
+    top: 350px; /* product-descriptionと同じ高さに */
+    width: 250px; /* サイズを調整 */
+    height: 120px;
+    z-index: 3; /* 他の要素より前面に */
+}
+
+/* 下部セクション */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    gap: 30px;
+}
+
+.explanation {
+    flex: 1;
+}
+
+.explanation-text {
+    display: none;
+}
+
+.simple-drawing {
+    margin-top: 30px;
+}
+
+.drawing-box {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.badge-with-image {
+    position: relative;
+}
+
+.mati-image {
+    display: inline-block;
+    position: absolute;
+    width: 300px; /* お好みで調整 */
+    height: auto;
+    border-radius: 10px;
+    transform: rotate(8deg);
+    margin-left: 850px; /* ← ここを大きくすると右に寄ります */
+    vertical-align: middle;
+    margin-top: 700px; /* ← ここを追加・調整して下に移動 */
+}
+
+.kaihuu-image {
+    position: absolute;
+    left: 0px; /* 50px → 100px に変更して右に移動 */
+    top: 750px; /* 600px → 550px に変更して上に移動 */
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    object-fit: contain; /* 追加：画像の縦横比を保持 */
+}
+
+.kaihuu2-image {
+    position: absolute;
+    left: 0px; /* kaihuuと同じ左位置 */
+    top: 1020px; /* kaihuuの下に配置 */
+    width: 150px; /* kaihuuと同じサイズ */
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+}
+
+.pinkcomment-svg {
+    position: absolute;
+    left: 150px; /* kaihuuの右隣に配置 */
+    top: 765px; /* kaihuuと同じ高さ */
+    width: 600px; /* サイズを調整 */
+    height: auto;
+    z-index: 5;
+    object-fit: contain;
+    background: transparent; /* 透明な背景に変更 */
+}
+
+.cute-text-on-pinkcomment {
+    position: absolute;
+    left: 210px;
+    top: 780px;
+    width: 500px;
+    text-align: center;
+    font-size: 45px;
+    color: #615858;
+    z-index: 6;
+    font-family: 'Yusei Magic','Hiragino Sans', 'Yu Gothic', sans-serif;
+    pointer-events: none;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.midoricomment-svg {
+    position: absolute;
+    left: 150px; /* pinkcommentと同じ左位置 */
+    top: 1015px; /* pinkcommentの下に配置 */
+    width: 600px; /* pinkcommentと同じサイズ */
+    height: auto;
+    z-index: 5;
+    object-fit: contain;
+    background: transparent;
+}
+
+.cute-text-on-midoricomment {
+    position: absolute;
+    left: 210px;
+    top: 1040px;
+    width: 500px;
+    text-align: center;
+    font-size: 45px;
+    color: #615858;
+    z-index: 6;
+    font-family: 'Yusei Magic','Hiragino Sans', 'Yu Gothic', sans-serif;
+    pointer-events: none;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.star-svg {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    z-index: -0.5;
+}
+
+.star-1 {
+    left: 200px;
+    top: 150px;
+    transform: rotate(20deg);
+}
+
+.star-2 {
+    left: 800px;
+    top: 400px;
+    transform: rotate(-30deg);
+    width: 100px;
+}
+
+.star-3 {
+    left: 1000px;
+    top: 800px;
+    transform: rotate(45deg);
+    width: 120px;
+}
+
+.star-4 {
+    left: 50px;
+    top: 1100px;
+    transform: rotate(-15deg);
+    width: 80px;
+}
+
+/* ナビゲーション */
+.navigation {
+    margin-top: 0px; /* ← ここを追加・調整して上に移動 */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* ← これで上下中央揃え */
+    gap: 30px;
+    .navigation {
+    margin-bottom: 250px; /* ← お好みで数値を大きくして下から離す */
+    /* 他の既存のスタイルはそのままでOK */
+}
+
+}
+
+.navigation-wrapper {
+    padding-bottom: 100px;
+}
+
+.nav-group {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+}
+
+.nav-img.active {
+    filter: drop-shadow(0 0 8px #ff8fa3) brightness(1.2);
+    border-radius: 16px;
+    outline: 3px solid #ff8fa3;
+    outline-offset: 2px;
+}
+
+.nav-btn {
+    background: #c8a8d8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(200, 168, 216, 0.4);
+}
+
+.nav-btn:hover {
+    background: #b899c9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(200, 168, 216, 0.6);
+}
+
+.nav-btn.active {
+    background: #ff8fa3;
+    box-shadow: 0 4px 15px rgba(255, 143, 163, 0.6);
+}
+
+
+
+/* レスポンシブ対応 */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 100vw; /* 全画面表示では横幅いっぱいに */
+        padding: 50px;
+    }
+}
+    
+
+@media (min-width: 600px) {
+    .container {
+      max-width: 1200px;
+      min-height: 205vh;
+    }
+    
+    .header-section {
+        margin-left: -200px; 
+    }
+    
+    .product-badge-svg {
+        width: 600px; 
+        height: 198px;
+    }
+    
+    .product-title {
+        font-size: 100px; 
+        margin-left: -170px; 
+    }
+
+    .kaihuu-image {
+        left: -100px !important;
+        top: 767px !important; 
+    }
+
+    .kaihuu2-image {
+        left: -100px !important; 
+        top: 1020px !important; 
+    }
+
+    .cute-text-on-pinkcomment {
+        left: 145px !important; 
+        top: 790px !important; 
+    }
+
+    .pinkcomment-svg {
+        left: 80px !important; 
+        top: 775px !important;
+        width: 600px !important;
+    }
+
+    .cute-text-on-yellowcomment {
+        left: 145px !important;
+        top: 1040px !important;
+    }
+
+     .yellowcomment-svg {
+        left: 80px !important;
+        top: 1025px !important;
+        width: 600px !important;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    html {
+        background-size: 40px 60px; 
+    }
+    
+    
+    .container {
+        margin-top: 0 !important;
+        max-width: 100%;
+        padding: 10px;
+        margin: 5px;
+        min-height: 120vh;
+    }
+    
+    .product-description {
+        margin-left: 200px;
+        width: 23%;
+        height: 180px;
+        margin-top: 30px; 
+    }
+    
+    .product-description p {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    
+    .product-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .product-image img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .kazari1-img {
+        left: 400px;
+        width: 100px;
+        top: 80px;
+    }
+    
+    .below-badge-image {
+        width: 200px;
+        height: 200px;
+        left: 15px;
+        top: 90px;
+    }
+    
+    .pink-svg {
+        width: 250px;
+        height: 250px;
+        left: -10px;
+        top: 60px;
+    }
+    
+    .bottom-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .product-title {
+        font-size: 28px;
+        margin-left: -20px;
+    }
+    
+    .product-badge-svg {
+        width: 200px !important;
+        height: 65px !important;
+    }
+
+    .navigation-wrapper {
+        padding-bottom: 50px; 
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 50px ;
+        margin-top: 120px;
+    }
+
+    .kaihuu-image {
+        top: 400px !important;
+        left: 20px;
+        width: 100px;
+    }
+
+    .kaihuu2-image {
+        top: 580px !important;
+        left: 20px;
+        width: 100px;
+    }
+
+    .cute-text-on-pinkcomment {
+        left: 120px !important;
+        top: 430px !important;
+        font-size: 24px;
+        width: 300px;
+    }
+
+    .pinkcomment-svg {
+        left: 90px !important;
+        top: 420px !important;
+        width: 350px;
+    }
+
+    .cute-text-on-yellowcomment {
+        left: 120px !important;
+        top: 610px !important;
+        font-size: 24px;
+        width: 300px;
+    }
+
+    .midoricomment-svg {
+        left: 90px !important;
+        top: 600px !important;
+        width: 350px !important;
+    }
+
+    .mati-image {
+        width: 120px;
+        margin-left: 370px;
+        margin-top: 650px;
+        z-index: 10;
+    }
+    
+    .price-svg {
+        left: 160px;
+        top: 240px;
+        width: 90px;
+        height: 45px;
+    }
+
+    .star-svg {
+        width: 80px;
+    }
+    
+    .star-1 {
+        left: 100px;
+        top: 100px;
+        width: 60px;
+    }
+
+    .star-2 {
+        left: 300px;
+        top: 200px;
+        width: 50px;
+    }
+
+    .star-3 {
+        left: 250px;
+        top: 450px;
+        width: 60px;
+    }
+
+    .star-4 {
+        left: 30px;
+        top: 800px;
+        width: 40px;
+    }
+
+    .navigation {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0;
+        width: 100%;
+        padding: 0 60px;
+    }
+    .nav-group {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
+        flex: 1;
+    }
+
+    .nav-group img[alt="kapuyellow1"],
+    .nav-group img[alt="kapuyellow2"],
+    .nav-group img[alt="kapuyellow3"],
+    .nav-group img[alt="haikapu1"],
+    .nav-group img[alt="haikapu2"] {
+        width: 70px !important;
+        height: 70px !important;
+        object-fit: contain;
+    }
+
+}
+
+.nav-group img[alt="kapu1"],
+.nav-group img[alt="kapu2"],
+.nav-group img[alt="kapu3"],
+.nav-group img[alt="haikapu1"],
+.nav-group img[alt="haikapu2"] {
+    margin-top: -40px; 
+    transition: transform 0.2s;
+}
+
+.nav-group img[alt="kapu1"]:hover {
+    transform: scale(1.12) rotate(-17deg);
+}
+.nav-group img[alt="kapu2"]:hover {
+    transform: scale(1.12) rotate(17deg);
+}
+.nav-group img[alt="kapu3"]:hover {
+    transform: scale(1.12) rotate(-17deg);
+}
+.nav-group img[alt="haikapu1"]:hover {
+    transform: scale(1.12) rotate(17deg);
+}
+.nav-group img[alt="haikapu2"]:hover {
+    transform: scale(1.12) rotate(-17deg);
+}
+
+
