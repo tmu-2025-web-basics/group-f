@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85.04 85.04">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #d8e5ec;
+      }
+    </style>
+  </defs>
+  <circle class="st0" cx="42.02" cy="42.52" r="20.5"/>
+  <ellipse class="st0" cx="42.52" cy="21.52" rx="2.5" ry="5.5"/>
+  <ellipse class="st0" cx="42.52" cy="63.52" rx="2.5" ry="5.5"/>
+  <ellipse class="st0" cx="61.92" cy="34.48" rx="5.5" ry="2.5" transform="translate(-8.48 26.32) rotate(-22.5)"/>
+  <ellipse class="st0" cx="23.12" cy="50.56" rx="5.5" ry="2.5" transform="translate(-17.59 12.7) rotate(-22.5)"/>
+  <ellipse class="st0" cx="23.12" cy="34.48" rx="2.5" ry="5.5" transform="translate(-17.59 42.65) rotate(-67.5)"/>
+  <ellipse class="st0" cx="61.92" cy="50.56" rx="2.5" ry="5.5" transform="translate(-8.48 88.42) rotate(-67.5)"/>
+  <ellipse class="st0" cx="50.56" cy="23.12" rx="5.5" ry="2.5" transform="translate(9.85 60.98) rotate(-67.5)"/>
+  <ellipse class="st0" cx="34.48" cy="61.92" rx="5.5" ry="2.5" transform="translate(-35.92 70.08) rotate(-67.5)"/>
+  <ellipse class="st0" cx="34.48" cy="23.12" rx="2.5" ry="5.5" transform="translate(-6.22 14.96) rotate(-22.5)"/>
+  <ellipse class="st0" cx="50.56" cy="61.92" rx="2.5" ry="5.5" transform="translate(-19.85 24.06) rotate(-22.5)"/>
+  <ellipse class="st0" cx="57.37" cy="27.67" rx="5.5" ry="2.5" transform="translate(-2.76 48.67) rotate(-45)"/>
+  <ellipse class="st0" cx="27.67" cy="57.37" rx="5.5" ry="2.5" transform="translate(-32.46 36.37) rotate(-45)"/>
+  <ellipse class="st0" cx="27.67" cy="27.67" rx="2.5" ry="5.5" transform="translate(-11.46 27.67) rotate(-45)"/>
+  <ellipse class="st0" cx="57.37" cy="57.37" rx="2.5" ry="5.5" transform="translate(-23.76 57.37) rotate(-45)"/>
+  <ellipse class="st0" cx="21.52" cy="42.52" rx="5.5" ry="2.5"/>
+  <ellipse class="st0" cx="63.52" cy="42.52" rx="5.5" ry="2.5"/>
+</svg>
