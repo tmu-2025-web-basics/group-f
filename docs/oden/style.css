@@ -220,7 +220,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     margin-top: 700px; /* ← ここを追加・調整して下に移動 */
 }
 
-.kaihuu1-image {
+.kaihuu-image {
     position: absolute;
     left: 0px; /* 50px → 100px に変更して右に移動 */
     top: 757px; /* 600px → 550px に変更して上に移動 */
@@ -546,7 +546,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         margin-top: 120px;
     }
 
-    .kaihuu1-image {
+    .kaihuu-image {
         top: 400px !important;
         left: 20px;
         width: 100px;
