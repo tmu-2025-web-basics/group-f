@@ -427,7 +427,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         margin-left: -170px; 
     }
 
-    .kaihuu1-image {
+    .kaihuu-image {
         left: -100px !important;
         top: 767px !important; 
     }
