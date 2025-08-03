@@ -558,7 +558,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         width: 100px;
     }
 
-    .cute-text-on-pinkcomment {
+    .cute-text-on-bluecomment {
         left: 120px !important;
         top: 430px !important;
         font-size: 24px;
@@ -571,7 +571,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         width: 350px;
     }
 
-    .cute-text-on-yellowcomment {
+    .cute-text-on-midoricomment {
         left: 120px !important;
         top: 610px !important;
         font-size: 24px;
