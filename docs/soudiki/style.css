@@ -666,7 +666,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 .nav-group img[alt="kapublue1"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
-.nav-group img[alt="kapublue"]:hover {
+.nav-group img[alt="kapublue2"]:hover {
     transform: scale(1.12) rotate(17deg);
 }
 .nav-group img[alt="kapublue3"]:hover {
