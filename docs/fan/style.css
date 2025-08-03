@@ -438,7 +438,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         top: 1020px !important; 
     }
 
-    .cute-text-on-pinkcomment {
+    .cute-text-on-bluecomment {
         left: 145px !important; 
         top: 790px !important; 
     }
@@ -559,7 +559,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         width: 100px;
     }
 
-    .cute-text-on-pinkcomment {
+    .cute-text-on-bluecomment {
         left: 120px !important;
         top: 430px !important;
         font-size: 24px;
