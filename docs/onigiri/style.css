@@ -754,7 +754,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 .nav-group img[alt="kapu3"],
 .nav-group img[alt="haikapu1"],
 .nav-group img[alt="haikapu2"] {
-    margin-top: -40px; 
+    margin-top: 0px; 
     transition: transform 0.2s;
 }
 
