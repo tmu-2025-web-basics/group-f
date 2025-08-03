@@ -740,7 +740,15 @@ position: absolute; /* fixedからabsoluteに変更 */
     .nav-group-haikapu {
         margin-top: 32px; /* ← ここで上下グループの間に空白を作る。お好みで調整 */
     }
-
+.nav-group img[alt="kapuyellow1"],
+    .nav-group img[alt="kapuyellow2"],
+    .nav-group img[alt="kapuyellow3"],
+    .nav-group img[alt="haikapu1"],
+    .nav-group img[alt="haikapu2"] {
+        width: 70px !important;
+        height: 70px !important;
+        object-fit: contain;
+    }
 }
 
 .nav-group img[alt="kapu1"],
