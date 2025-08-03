@@ -486,7 +486,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     }
     
     .product-description p {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 10px;
     }
     
@@ -503,7 +503,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .kazari1-img {
         left: 400px;
         width: 100px;
-        top: 80px;
+        top: 65px;
     }
     
     .below-badge-image {
