@@ -153,7 +153,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     display: inline-block;
     position: absolute;
     top: 140px;      /* お好みで調整 */
-    right: -180px;    /* お好みで調整 */
+    right: -170px;    /* お好みで調整 */
     width: 300px;     /* お好みで調整 */
     height: auto;
     z-index: 2;
