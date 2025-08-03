@@ -638,18 +638,14 @@ position: absolute; /* fixedからabsoluteに変更 */
 
     .navigation {
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: space-evenly;
-        gap: 0;
-        width: 100%;
-        padding: 0 60px;
+        justify-content: center;
+        gap: 8px;
     }
     .nav-group {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 0;
-        flex: 1;
+        justify-content: center;
+        gap: 8px;
     }
 
     .nav-group img[alt="kapuyellow1"],
@@ -657,11 +653,9 @@ position: absolute; /* fixedからabsoluteに変更 */
     .nav-group img[alt="kapuyellow3"],
     .nav-group img[alt="haikapu1"],
     .nav-group img[alt="haikapu2"] {
-        width: 70px !important;
-        height: 70px !important;
-        object-fit: contain;
+        width: 60px;
+        height: auto;
     }
-
 }
 
 .nav-group img[alt="kapublue1"],
