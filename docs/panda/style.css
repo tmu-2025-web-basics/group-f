@@ -154,7 +154,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 .kazari1-img {
     display: inline-block;
     position: absolute;
-    top: 180px;      /* お好みで調整 */
+    top: 150px;      /* お好みで調整 */
     right: -180px;    /* お好みで調整 */
     width: 300px;     /* お好みで調整 */
     height: auto;
