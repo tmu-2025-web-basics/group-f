@@ -495,7 +495,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     }
     
     .product-description p {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 10px;
     }
     
@@ -596,15 +596,15 @@ position: absolute; /* fixedからabsoluteに変更 */
 
     .badgedai-image {
         width: 120px;
-        margin-left: 370px;
-        margin-top: 650px;
+        margin-left: 390px;
+        margin-top: 660px;
         z-index: 10;
     }
     
     .price-svg {
         left: 160px;
         top: 240px;
-        width: 90px;
+        width: 80px;
         height: 45px;
     }
 
