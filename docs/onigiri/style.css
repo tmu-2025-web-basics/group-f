@@ -662,13 +662,13 @@ position: absolute; /* fixedからabsoluteに変更 */
     transition: transform 0.2s;
 }
 
-.nav-group img[alt="kapuyellow1"]:hover {
+.nav-group img[alt="kapu1"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
-.nav-group img[alt="kapuyellow2"]:hover {
+.nav-group img[alt="kapu2"]:hover {
     transform: scale(1.12) rotate(17deg);
 }
-.nav-group img[alt="kapuyellow3"]:hover {
+.nav-group img[alt="kapu3"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
 .nav-group img[alt="haikapu1"]:hover {
