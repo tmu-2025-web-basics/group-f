@@ -242,7 +242,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .pinkcomment-svg {
     position: absolute;
-    left: 220px; /* kaihuuの右隣に配置 */
+    left: 260px; /* kaihuuの右隣に配置 */
     top: 765px; /* kaihuuと同じ高さ */
     width: 600px; /* サイズを調整 */
     height: auto;
@@ -253,7 +253,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .cute-text-on-pinkcomment {
     position: absolute;
-    left: 240px;
+    left: 280px;
     top: 780px;
     width: 500px;
     text-align: center;
@@ -271,7 +271,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .midoricomment-svg {
     position: absolute;
-    left: 220px; /* pinkcommentと同じ左位置 */
+    left: 260px; /* pinkcommentと同じ左位置 */
     top: 1015px; /* pinkcommentの下に配置 */
     width: 600px; /* pinkcommentと同じサイズ */
     height: auto;
@@ -282,7 +282,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .cute-text-on-midoricomment {
     position: absolute;
-    left: 240px;
+    left: 280px;
     top: 1040px;
     width: 500px;
     text-align: center;
