@@ -648,9 +648,8 @@ html {
     .nav-group img[alt="kapuyellow3"],
     .nav-group img[alt="haikapu1"],
     .nav-group img[alt="haikapu2"] {
-        width: 70px !important;
-        height: 70px !important;
-        object-fit: contain;
+        margin-top: -40px; 
+    transition: transform 0.2s;
     }
 
 }
