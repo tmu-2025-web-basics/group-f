@@ -638,9 +638,9 @@ position: absolute; /* fixedからabsoluteに変更 */
         gap: 8px;
     }
 
-    .nav-group img[alt="kapuyellow1"],
-    .nav-group img[alt="kapuyellow2"],
-    .nav-group img[alt="kapuyellow3"],
+    .nav-group img[alt="kapumidori1"],
+    .nav-group img[alt="kapumidori2"],
+    .nav-group img[alt="kapumidori3"],
     .nav-group img[alt="haikapu1"],
     .nav-group img[alt="haikapu2"] {
         width: 60px;
