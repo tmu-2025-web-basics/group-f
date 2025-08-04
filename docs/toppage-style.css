@@ -154,7 +154,7 @@ body.home{
     content: "";
     position: absolute;
     left: 19.75%;
-    top: 35%;
+    top: 30%;
     width: 60vw;
     height: 60vw;
     background: linear-gradient(to bottom, #fff 0 50%, transparent 50% 100%);
