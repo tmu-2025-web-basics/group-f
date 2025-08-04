@@ -358,6 +358,8 @@ img {
   .image-item.centered{
     transform: scale(0.6);
   }
+  .gacha-btn {
+    fontsize:18px;
 
 }
 
