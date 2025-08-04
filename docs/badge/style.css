@@ -438,6 +438,12 @@ position: absolute; /* fixedからabsoluteに変更 */
         left: -100px !important; 
         top: 1020px !important; 
     }
+    
+    .kazari2-img {
+        left: 400px;
+        width: 100px;
+        top: 70px;
+    }
 
     .cute-text-on-bluecomment {
         left: 145px !important; 
@@ -504,7 +510,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .kazari2-img {
         left: 400px;
         width: 100px;
-        top: 90px;
+        top: 70px;
     }
     
     .below-badge-image {
