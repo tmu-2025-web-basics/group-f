@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         lever.style.width = '55px';
         lever.style.height = '55px';
-        lever.style.bottom = '103px';
+        lever.style.bottom = '113px';
         lever.style.border = '8px solid #9eccdd';
         
         leverEqList.forEach(eq => {
