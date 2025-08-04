@@ -410,7 +410,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     
 
 @media (min-width: 600px) {
-    .body{
+    body{
         width:600px
         overflow-x: hidden; 
     }
