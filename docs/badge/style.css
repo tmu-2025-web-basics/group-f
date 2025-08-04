@@ -603,8 +603,8 @@ position: absolute; /* fixedからabsoluteに変更 */
 
     .badgedai-image {
         width: 100px;
-        margin-left: 400px;
-        margin-top: 660px;
+        margin-left: 380px;
+        margin-top: 690px;
         z-index: 10;
     }
     
