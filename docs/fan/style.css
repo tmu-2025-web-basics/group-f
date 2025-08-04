@@ -399,18 +399,11 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 
 
-/* レスポンシブ対応 */
-@media (min-width: 600px) {
-    .container {
-        max-width: 100vw; /* 全画面表示では横幅いっぱいに */
-        padding: 50px;
-    }
-}
     
 
 @media (min-width: 600px) {
     .container {
-      max-width: 1200px;
+      max-width: 600px;
       min-height: 205vh;
     }
     
@@ -440,7 +433,8 @@ position: absolute; /* fixedからabsoluteに変更 */
 
     .cute-text-on-bluecomment {
         left: 145px !important; 
-        top: 790px !important; 
+        top: 790px !important;
+        fontsize:18px;
     }
 
     .bluecomment-svg {
@@ -452,12 +446,14 @@ position: absolute; /* fixedからabsoluteに変更 */
     .cute-text-on-yellowcomment {
         left: 145px !important;
         top: 1040px !important;
+        fontsize:18px;
     }
 
      .yellowcomment-svg {
         left: 80px !important;
         top: 1025px !important;
         width: 600px !important;
+        
     }
 }
 
@@ -562,7 +558,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .cute-text-on-bluecomment {
         left: 120px !important;
         top: 430px !important;
-        font-size: 24px;
+        font-size: 18px;
         width: 300px;
     }
 
@@ -575,7 +571,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .cute-text-on-yellowcomment {
         left: 120px !important;
         top: 610px !important;
-        font-size: 24px;
+        font-size: 18px;
         width: 300px;
     }
 
@@ -583,6 +579,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         left: 90px !important;
         top: 600px !important;
         width: 350px !important;
+        
     }
 
     .fan-image {
@@ -639,9 +636,9 @@ position: absolute; /* fixedからabsoluteに変更 */
         gap: 8px;
     }
 
-    .nav-group img[alt="kapuyellow1"],
-    .nav-group img[alt="kapuyellow2"],
-    .nav-group img[alt="kapuyellow3"],
+    .nav-group img[alt="kapublue1"],
+    .nav-group img[alt="kapublue2"],
+    .nav-group img[alt="kapublue3"],
     .nav-group img[alt="haikapu1"],
     .nav-group img[alt="haikapu2"] {
         width: 60px;
