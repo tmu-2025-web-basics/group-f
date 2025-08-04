@@ -172,4 +172,8 @@ body.home{
     font-size: 24px;
     bottom: 42%;
    }
+    p{
+    font-size: 30px;
+    padding-top: 40px;
+}
 }
