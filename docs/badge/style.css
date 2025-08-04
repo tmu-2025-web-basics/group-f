@@ -407,19 +407,11 @@ position: absolute; /* fixedからabsoluteに変更 */
 }
 
 
-
-/* レスポンシブ対応 */
-@media (min-width: 600px) {
-    .container {
-        max-width: 100vw; /* 全画面表示では横幅いっぱいに */
-        padding: 50px;
-    }
-}
     
 
 @media (min-width: 600px) {
     .container {
-      max-width: 1200px;
+      max-width: 600px;
       min-height: 205vh;
     }
     
@@ -595,8 +587,8 @@ position: absolute; /* fixedからabsoluteに変更 */
     }
 
     .badgedai-image {
-        width: 120px;
-        margin-left: 390px;
+        width: 100px;
+        margin-left: 400px;
         margin-top: 660px;
         z-index: 10;
     }
