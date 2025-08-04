@@ -154,7 +154,7 @@ body.home{
     content: "";
     position: absolute;
     left: 19.75%;
-    top: 30%;
+    top: 35%;
     width: 60vw;
     height: 60vw;
     background: linear-gradient(to bottom, #fff 0 50%, transparent 50% 100%);
@@ -163,10 +163,10 @@ body.home{
     pointer-events: none;
 }
   .btn {
-    width: 40vw;
-    height: 48px;
+    width: 38vw;
+    height: 46px;
     font-size: 16px;
-    bottom: 40%;
+    bottom: 45%;
    }
   .title {
     font-size: 24px;
