@@ -335,7 +335,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 /* ナビゲーション */
 .navigation {
-    margin-top: 900px; /* ← ここを追加・調整して上に移動 */
+    margin-top: 150px; /* ← ここを追加・調整して上に移動 */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -384,17 +384,6 @@ position: absolute; /* fixedからabsoluteに変更 */
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(200, 168, 216, 0.4);
-}
-
-.nav-btn:hover {
-    background: #b899c9;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(200, 168, 216, 0.6);
-}
-
-.nav-btn.active {
-    background: #ff8fa3;
-    box-shadow: 0 4px 15px rgba(255, 143, 163, 0.6);
 }
 
 
@@ -546,8 +535,7 @@ position: absolute; /* fixedからabsoluteに変更 */
         flex-direction: column;
         align-items: center;
         gap: 16px;
-        margin-bottom: 50px ;
-        margin-top: 0px;
+    
     }
 
     .kaihuu3-image {
