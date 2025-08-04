@@ -396,19 +396,11 @@ position: absolute; /* fixedからabsoluteに変更 */
 }
 
 
-
-/* レスポンシブ対応 */
-@media (min-width: 1600px) {
-    .container {
-        max-width: 100vw; /* 全画面表示では横幅いっぱいに */
-        padding: 50px;
-    }
-}
-    
+ 
 
 @media (min-width: 600px) {
     .container {
-      max-width: 1200px;
+      max-width: 600px;
       min-height: 205vh;
     }
     
