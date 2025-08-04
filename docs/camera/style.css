@@ -403,6 +403,9 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 
 @media (min-width: 600px) {
+    .body{
+        width:600px
+    }
     .container {
       max-width: 600px;
       min-height: 205vh;
@@ -459,6 +462,9 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 
 @media (max-width: 768px) {
+    .body{
+        width:600px
+    }
     html {
         background-size: 40px 60px; 
     }
