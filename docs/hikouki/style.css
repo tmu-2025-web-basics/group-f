@@ -401,6 +401,9 @@ html {
     
 
 @media (min-width: 600px) {
+    .body{
+    overflow-x: hidden; 
+    }
     .container {
       max-width: 600px;
       min-height: 205vh;
@@ -459,6 +462,8 @@ html {
 @media (max-width: 768px) {
     html {
         background-size: 40px 60px; 
+        overflow-x: hidden; 
+        overflow-x: hidden; 
     }
     
     
