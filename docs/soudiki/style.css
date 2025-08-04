@@ -350,7 +350,8 @@ position: absolute; /* fixedからabsoluteに変更 */
 }
 
 .navigation-wrapper {
-    padding-bottom: 100px;
+    margin-top:1080px;
+    padding-bottom: 10px;
 }
 
 .nav-group {
