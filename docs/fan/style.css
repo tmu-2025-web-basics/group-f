@@ -363,7 +363,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     top: 800px;
     width: 500px;
     text-align: center;
-    font-size: 35px;
+    font-size: 60px;
     color: #615858;
     z-index: 6;
     font-family: 'Yusei Magic','Hiragino Sans', 'Yu Gothic', sans-serif;
@@ -392,7 +392,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     top: 1040px;
     width: 500px;
     text-align: center;
-    font-size: 35px;
+    font-size: 60px;
     color: #615858;
     z-index: 6;
     font-family: 'Yusei Magic','Hiragino Sans', 'Yu Gothic', sans-serif;
