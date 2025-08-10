@@ -166,8 +166,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     border-radius: 20px;
     padding: 5vw;
     box-shadow: none;
-    min-height: 205vh; /* 追加：画面の1.5倍の高さを確保 */
-    padding-bottom: 120px; /* ← ここを追加・調整 */
+    padding-bottom: 20px; /* 120pxから20pxに削減して隙間を削除 */
 }
 
 /* メイン商品セクション */
@@ -452,7 +451,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 }
 
 .navigation-wrapper {
-    margin-top:1080px;
+    margin-top: auto;
     padding-bottom: 10px;
 }
 
@@ -770,8 +769,3 @@ position: absolute; /* fixedからabsoluteに変更 */
 .nav-group img[alt="haikapu2"]:hover {
     transform: scale(1.12) rotate(-17deg);
 }
-
-
-
-
-
