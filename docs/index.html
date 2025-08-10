@@ -6,11 +6,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei Magic:wght@400&display=swap" />
     <link rel="stylesheet" href="toppage-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
 
  <body class = "home">
+    <header class="main-header">
+      <div class="header-container">
+        <div class="title-menu-group">
+          <button class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="header-nav" id="header-nav">
+          <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="select-machine/select-machine.html">ガチャ選択</a></li>
+            <li><a href="shohin-ichiran/">商品一覧</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <audio id = "bgm" src = "Splash_of_water.mp3" loop></audio>
     <div id="sound-modal" class="sound-select-modal">
       <div class="sound-select-box">
@@ -54,6 +75,23 @@
   }
       document.getElementById('sound-on').onclick = () => showMainScreen(true);
       document.getElementById('sound-off').onclick = () => showMainScreen(false);
+
+      // ハンバーガーメニューの制御
+      const hamburgerMenu = document.getElementById('hamburger-menu');
+      const headerNav = document.getElementById('header-nav');
+      
+      hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.classList.toggle('active');
+        headerNav.classList.toggle('active');
+      });
+
+      // ナビゲーションリンクをクリックしたらメニューを閉じる
+      document.querySelectorAll('.header-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburgerMenu.classList.remove('active');
+          headerNav.classList.remove('active');
+        });
+      });
 
     </script>
     

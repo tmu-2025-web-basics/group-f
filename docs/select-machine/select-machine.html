@@ -6,9 +6,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="select-machine.css">
 </head>
 <body>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="title-menu-group">
+        <h1 class="site-title">かぷせるわーるど</h1>
+        <button class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="header-nav" id="header-nav">
+        <ul>
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="select-machine.html">ガチャ選択</a></li>
+          <li><a href="../shohin-ichiran/">商品一覧</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <button id="moveLeft" class="move-btn left"></button>
   <button id="moveRight" class="move-btn right"></button>
   <div class="scroll-container" id="imageList"> 
@@ -63,6 +84,31 @@
     </div>
   </div>
 
+  <script>
+    // ページ読み込み時にヘッダーを表示
+    window.addEventListener('load', function() {
+      setTimeout(() => {
+        document.querySelector('.main-header').classList.add('show');
+      }, 500); // 0.5秒後にヘッダーを表示
+    });
+
+    // ハンバーガーメニューの制御
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const headerNav = document.getElementById('header-nav');
+    
+    hamburgerMenu.addEventListener('click', function() {
+      hamburgerMenu.classList.toggle('active');
+      headerNav.classList.toggle('active');
+    });
+
+    // ナビゲーションリンクをクリックしたらメニューを閉じる
+    document.querySelectorAll('.header-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('active');
+        headerNav.classList.remove('active');
+      });
+    });
+  </script>
   <script src="select-machine.js"></script>
 </body>
 </html>

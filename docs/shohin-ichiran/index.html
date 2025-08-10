@@ -7,12 +7,29 @@
   	
   	<link rel="stylesheet"  href="./index.css" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei Magic:wght@400&display=swap" />
-  	
-  	
-  	
+  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  	
+  	<header class="main-header">
+      <div class="header-container">
+        <div class="title-menu-group">
+          <h1 class="site-title">かぷせるわーるど</h1>
+          <button class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="header-nav" id="header-nav">
+          <ul>
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../select-machine/select-machine.html">ガチャ選択</a></li>
+            <li><a href="index.html">商品一覧</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
   	<div class="div">
     		
 
@@ -170,6 +187,31 @@
 		
 		// ページ読み込み時に実行
 		window.addEventListener('load', createBackgroundPattern);
+
+		// ページ読み込み時にヘッダーを表示
+		setTimeout(() => {
+			const header = document.querySelector('.main-header');
+			if (header) {
+				header.classList.add('show');
+			}
+		}, 500);
+
+		// ハンバーガーメニューの制御
+		const hamburgerMenu = document.getElementById('hamburger-menu');
+		const headerNav = document.getElementById('header-nav');
+		
+		hamburgerMenu.addEventListener('click', function() {
+			hamburgerMenu.classList.toggle('active');
+			headerNav.classList.toggle('active');
+		});
+
+		// ナビゲーションリンクをクリックしたらメニューを閉じる
+		document.querySelectorAll('.header-nav a').forEach(link => {
+			link.addEventListener('click', () => {
+				hamburgerMenu.classList.remove('active');
+				headerNav.classList.remove('active');
+			});
+		});
 	</script>
 	
 </body>
