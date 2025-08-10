@@ -159,16 +159,20 @@ position: absolute; /* fixedからabsoluteに変更 */
 }
 
 .container {
-    max-width: 90%;
-    min-width: 1200px; /* ← ここを追加。お好みで大きめに */
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    margin-left: 8vw; /* コンテンツを右に移動 */
     background: transparent;
     border-radius: 20px;
-    padding: 5vw;
+    padding: 2vw;
     box-shadow: none;
-    min-height: 205vh; /* 追加：画面の1.5倍の高さを確保 */
-    padding-bottom: 120px; /* ← ここを追加・調整 */
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 /* メイン商品セクション */
 .main-product {
@@ -181,7 +185,6 @@ position: absolute; /* fixedからabsoluteに変更 */
     align-items: center;
     gap: 2vw;
     margin-bottom: 25px;
-     
 }
 
 .product-badge-svg {
@@ -206,7 +209,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     font-size: 100px;
     color: #615858;
     margin: 0;
-    margin-left: -150px;
+    margin-left: -100px; /* soudikiページと同じ値 */
     font-weight: bold;
     white-space: nowrap; /* 改行を防ぐ */
 }
@@ -256,12 +259,11 @@ position: absolute; /* fixedからabsoluteに変更 */
 .kazari2-img {
     display: inline-block;
     position: absolute;
-    top: 260px;      /* お好みで調整 */
-    right: -180px;    /* お好みで調整 */
-    width: 300px;     /* お好みで調整 */
+    top:200vh;      
+    margin-left: 550px;    /* 画面からはみ出さないように調整 */
+    width: 400px;     /* サイズも少し調整 */
     height: auto;
     z-index: 2;
-    vertical-align: middle;
 }
 
 
@@ -380,16 +382,8 @@ position: absolute; /* fixedからabsoluteに変更 */
     height: auto;
     z-index: 5;
     object-fit: contain;
-    background: transparent    /* ナビゲーション */}
-    .navigation {
-        margin-top: 100px; /* ← この値を大きくすると下に移動します（例：150px, 200px など） */
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
+    background: transparent;
+}
 
 
 .cute-text-on-yellowcomment {
@@ -446,27 +440,31 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 /* ナビゲーション */
 .navigation {
-    margin-top: 150px; /* ← ここを追加・調整して上に移動 */
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; /* ← これで上下中央揃え */
+    align-items: center;
     gap: 30px;
-    .navigation {
-    margin-bottom: 250px; /* ← お好みで数値を大きくして下から離す */
-    /* 他の既存のスタイルはそのままでOK */
-}
 
 }
 
 .navigation-wrapper {
-    padding-bottom: 100px;
+    margin-top: auto;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; /* 縮小しないように */
+    margin-left: 26vw; 
 }
 
 .nav-group {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation > div {
@@ -497,16 +495,6 @@ position: absolute; /* fixedからabsoluteに変更 */
     box-shadow: 0 4px 15px rgba(200, 168, 216, 0.4);
 }
 
-.nav-btn:hover {
-    background: #b899c9;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(200, 168, 216, 0.6);
-}
-
-.nav-btn.active {
-    background: #ff8fa3;
-    box-shadow: 0 4px 15px rgba(255, 143, 163, 0.6);
-}
 
 
     
@@ -598,7 +586,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     
     .product-description {
         margin-left: 200px;
-        width: 23%;
+        width: 50%;
         height: 180px;
         margin-top: 30px; 
     }
@@ -606,6 +594,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .product-description p {
         font-size: 16px;
         padding-left: 10px;
+        width: 200px;
     }
     
     .product-content {
@@ -655,6 +644,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
     .navigation-wrapper {
         padding-bottom: 50px; 
+        margin-left: 0;
     }
     
     .navigation {
@@ -680,7 +670,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .cute-text-on-bluecomment {
         left: 120px !important;
         top: 430px !important;
-        font-size: 24px;
+        font-size: 20px;
         width: 300px;
     }
 
@@ -693,7 +683,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .cute-text-on-yellowcomment {
         left: 150px !important;
         top: 610px !important;
-        font-size: 24px;
+        font-size: 20px;
         width: 300px;
     }
 
