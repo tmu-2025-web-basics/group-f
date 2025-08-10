@@ -119,6 +119,7 @@ body {
 body {
     background-image: url('../images/nazo.jpg');
     background-repeat: repeat;
+    background-size:cover;
 }
 
 html {
@@ -173,6 +174,7 @@ html {
     box-shadow: none;
     min-height: 205vh;
     padding-bottom: 120px;
+    margin-left: 8vw;
 }
 
 /* メイン商品セクション */
@@ -455,6 +457,7 @@ html {
 
 .navigation-wrapper {
     padding-bottom: 100px;
+    margin-left: 26vw;
 }
 
 .nav-group {
