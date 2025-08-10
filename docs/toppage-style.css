@@ -358,14 +358,15 @@ body.home{
     font-size: 30px;
     padding-top: 40px;
   }
-     .site-description {
-        max-width: 95%;
-        width: 95%;
-        padding: 10px 15px;
+  .site-description {
+        max-width: 80%;
+        width: 70%;
+        padding: 8px 15px;
+        bottom: 30%;
     }
     
     .site-description p {
-        font-size: 16px;
-        line-height: 1.6;
+        font-size: 14px;
+        line-height: 1.5;
     }
 }
