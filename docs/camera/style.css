@@ -486,6 +486,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .navigation-wrapper {
     padding-bottom: 100px;
+    margin-left: 26vw; 
 }
 
 .nav-group {
