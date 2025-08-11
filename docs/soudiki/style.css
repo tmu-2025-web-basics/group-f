@@ -657,7 +657,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .cute-text-on-bluecomment {
         left: 120px !important;
         top: 430px !important;
-        font-size: 24px;
+        font-size: 20px;
         width: 300px;
     }
 
@@ -670,7 +670,7 @@ position: absolute; /* fixedからabsoluteに変更 */
     .cute-text-on-yellowcomment {
         left: 120px !important;
         top: 610px !important;
-        font-size: 24px;
+        font-size: 20px;
         width: 300px;
     }
 

@@ -114,20 +114,16 @@ body {
     margin: 0;
     position: relative;
     padding-top: 70px; /* ヘッダー分のスペースを確保 */
-}
-
-body {
     background-image: url('../images/nazo.jpg');
     background-repeat: repeat;
-    background-size:cover;
+    background-size: 1200px 1500px; /* 背景をもっと大きくする */
+    background-attachment: fixed; /* 背景を固定してしっかりカバー */
 }
 
 html {
     width: 100%;
-    height: 100%;
-    background: #fff8de; 
-    background-repeat: repeat;
-    background-size: 80px 120px;
+    height: 100%; 
+    background-attachment: fixed; /* 背景を固定してしっかりカバー */
 }
 
 
@@ -453,11 +449,12 @@ html {
     align-items: center;
     gap: 30px;
     margin-bottom: 250px;
+    margin-left: 26vw; 
 }
 
 .navigation-wrapper {
     padding-bottom: 100px;
-    margin-left: 26vw;
+    margin-left: 10vw;
 }
 
 .nav-group {
@@ -641,7 +638,8 @@ html {
     }
 
     .navigation-wrapper {
-        padding-bottom: 0.00781px ;
+        padding-bottom: 0.00781px;
+        margin-left: -30px;
     }
     
     .navigation {
@@ -738,6 +736,7 @@ html {
         align-items: center;
         justify-content: center;
         gap: 8px;
+        margin-left: -10px;
     }
     .nav-group {
         justify-content: center;

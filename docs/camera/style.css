@@ -193,13 +193,13 @@ position: absolute; /* fixedからabsoluteに変更 */
     max-width: 90%;
     min-width: 1200px; /* ← ここを追加。お好みで大きめに */
     margin: 0 auto;
-    margin-left: 8vw; 
     background: transparent;
     border-radius: 20px;
     padding: 5vw;
     box-shadow: none;
     min-height: 205vh; /* 追加：画面の1.5倍の高さを確保 */
     padding-bottom: 120px; /* ← ここを追加・調整 */
+    margin-left: 8vw;;
 }
 
 /* メイン商品セクション */
@@ -486,7 +486,7 @@ position: absolute; /* fixedからabsoluteに変更 */
 
 .navigation-wrapper {
     padding-bottom: 100px;
-    margin-left: 26vw; 
+    padding-left: 50vw !important;
 }
 
 .nav-group {
